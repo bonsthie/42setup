@@ -11,6 +11,8 @@ cd tmux
 sh autogen.sh
 ./configure && make -j
 cd ..
+mkdir ~/.config/tmux
+cp tmux.conf ~/.config//tmux
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
