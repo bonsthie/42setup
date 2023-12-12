@@ -20,7 +20,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone https://github.com/cacharle/c_formatter_42
 cd c_formatter_42
 pip3 install -e .
+cd ..
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mv ~/.zshrc ~/.zshrc.old
 cp .zshrc ~
 source ~/.zshrc
