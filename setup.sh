@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir ~/42Setup
-cd ~/42Setup
 git clone https://github.com/neovim/neovim
 cd neovim
 make  CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
@@ -22,6 +20,7 @@ cd c_formatter_42
 pip3 install -e .
 
 cat .zshrc >> ~/.zshrc
+source ~/.zshrc
 
 mkdir ~/.config/
 cd ~/.config/
